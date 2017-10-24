@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="script.js"></script>
+  <title>JavaScript Calculator</title>
+</head>
+<body>
+  <h1>Javascript Calculator</h1>
+  <div id='calculator'>
+    <form>
+      <input type='text' id='display' disabled>
+        <br>
+      <input type='button' value='C' class='keys' id='keys' onclick='toScreen("c")'>
+      <input type='button' value='CE' class='keys' id='keys' onclick='backspace()'>
+      <input type='button' value='?' class='keys' id='keys' onclick='toScreen("?")'>
+      <input type='button' value='/' class='keys' id='keys' onclick='toScreen("/")'>
+      <br>
+      <input type='button' class ='keys' value='7' id='numbers' onclick='toScreen("7")'>
+      <input type='button' class ='keys'value='8' id='numbers' onclick='toScreen("8")'>
+      <input type='button' class ='keys'value='9' id='numbers' onclick='toScreen("9")'>
+      <input type='button' value='*' class='keys' id='keys' onclick='toScreen("*")'>
+      <br>
+      <input type='button' class='keys'value='4' id='numbers' onclick='toScreen("4")'>
+      <input type='button' class='keys' value='5' id='numbers' onclick='toScreen("5")'>
+      <input type='button' class='keys' value='6' id='numbers' onclick='toScreen("6")'>
+      <input type='button' value='+' class='keys' id='keys' onclick='toScreen("+")'>
+      <br>
+      <input type='button' class ='keys'value='1' id='numbers' onclick='toScreen("1")'>
+      <input type='button' class ='keys'value='2' id='numbers' onclick='toScreen("2")'>
+      <input type='button' class ='keys'value='3' id='numbers' onclick='toScreen("3")'>
+      <input type='button' value='-' class='keys'id='keys' onclick='toScreen("-")'>
+      <br>
+      <input type='button' class ='keys zero' value='0' id='numbers' onclick='toScreen("0")'>
+      <input type='button' class ='keys' value='.' id='numbers' onclick='toScreen(".")'>
+      <input type='button' class='keys' value='=' id='equals' onclick='answer()'>
+    </form>
+  </div>
+</body>
+</html>
